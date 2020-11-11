@@ -27,7 +27,7 @@ public class Sistema {
          Postre.anadirAderezo(helado_vainilla, Aderezo.FRUTILLA);
         System.out.println(helado_vainilla);
 //        mnj_leche.cambiarTipoLeche(leche, helado_vainilla);
-        System.out.println(helado_vainilla.showPrecioFinal());
+        System.out.println(ManejadorDePrecio.showPrecioFinal(helado_vainilla));
         
         // Producir Pastel
         Pastel pastel_chocolate = new Pastel("Chocolate");
@@ -35,8 +35,7 @@ public class Sistema {
         Postre.anadirAderezo(pastel_chocolate, Aderezo.CREMA);
         System.out.println(pastel_chocolate);
 //        mnj_leche.cambiarTipoLeche(leche, pastel_chocolate);
-        System.out.println(pastel_chocolate.showPrecioFinal());
-        
+        System.out.println(ManejadorDePrecio.showPrecioFinal(pastel_chocolate));
         
         
         
