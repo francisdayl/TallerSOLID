@@ -61,6 +61,13 @@ public class Postre {
     public void setAderezos(ArrayList<Aderezo> aderezos) {
         this.aderezos = aderezos;
     }
+    public static void anadirAderezo(Postre p,Aderezo aderezo){
+        p.getAderezos().add(aderezo);
+    }
+    
+    public static void quitarAderezo(Postre p,Aderezo aderezo){
+        p.getAderezos().remove(aderezo);
+    }
     
     
 }
