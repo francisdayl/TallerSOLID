@@ -47,7 +47,7 @@ public class Sistema {
         ArrayList<Postre> arrPostres = new ArrayList<>();
         ManejadorDeLeche mnj_leche = new ManejadorDeLeche();
         //Cambiar tipo de leche
-        mnj_leche.cambiarTipoLeche(new LecheDescremada(), arrPostres);
+        mnj_leche.cambiarTipoLeche(new LecheDeslactosada(), arrPostres);
         // Producir Helado
         Postre helado_vainilla = new Helado("Vainilla");
         arrPostres.add(helado_vainilla);
@@ -59,6 +59,7 @@ public class Sistema {
             anadirAderezo(postre, new Crema());
             anadirAderezo(postre, new Frutilla());
             System.out.println(postre);
+            mnj_leche.cambiarTipoLeche(new LecheDeslactosada(),postre);
             System.out.println(ManejadorDePrecio.showPrecioFinal(postre));
         });        
         
