@@ -6,3 +6,5 @@
 
 3. En base al principio Single-Responsability, la clase postres solo debe responsabilisarse se guardar la informacion de los postres que se van a generar. Cualquier
 operacion que involucre la informacion de esta clase debe estar separada en caso de que se lleguen a realizar cambios en la formula
+
+4. En base al principio de Sustitución de Liskov, la clase Aderezos era muy estática. Ahora se cambió por una clase dinámica y con clases que heredan los metodos de está, las cuales representan los tipos de aderezos disponibles. 
