@@ -4,15 +4,12 @@
  * and open the template in the editor.
  */
 package Leche;
-
 import Postres.*;
-
-
-public class LecheEntera extends Leche{
-    @Override
-    public void usarPostre(Object postre){
-        System.out.println("Usando leche entera");
-    }
+/**
+ *
+ * @author Stela
+ */
+public abstract class Leche {
+    public abstract void usarPostre(Object postre);
     
 }
-
