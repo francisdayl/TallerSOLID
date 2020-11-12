@@ -8,3 +8,5 @@
 operacion que involucre la informacion de esta clase debe estar separada en caso de que se lleguen a realizar cambios en la formula
 
 4. En base al principio de Sustitución de Liskov, la clase Aderezos era muy estática. Ahora se cambió por una clase dinámica y con clases que heredan los metodos de está, las cuales representan los tipos de aderezos disponibles. 
+
+5. En base al principio de Sustitucion de Liskov, se cambio la Herencia con respecto a las clases en el paquete "Leche", dado que el metodo "usarPastel()" de la clase padre "LecheEntera" resultaba sobrante en la clase hija "LecheDeslactosada", al tener metodos de mas rompe el principio de Sustitucion de Liskov al no poder sustituir las clases "LecheEntera" con "LecheDeslactosada"
